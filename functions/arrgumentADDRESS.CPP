@@ -5,11 +5,12 @@ using namespace std;
    //scope of variables and understanding parameters
 
 int a = 10; // GLOBAL VARIABLE --- declared globally
+
 void fun(int x, int y) // FORMAL PARAMETERS
 {
     cout <<"address of fun x " <<&x<<endl;
     cout <<"address of fun y " <<&x<<endl;
-    cout<<" from void function " <<a <<endl ;
+    cout<<"from void function: " <<a <<endl ;
 }
 
 int main(){
@@ -18,5 +19,7 @@ int main(){
     cout <<"address of main x " <<&x<<endl;
     cout <<"address of main y " <<&y<<endl;
     fun(x,y); // ACTUAL PARAMETERS
-    cout<<a +20;
+    cout<<a +20 << endl;
+    int a = 2;  // redefining variables
+    cout <<a+20;
 }
