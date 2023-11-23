@@ -20,8 +20,4 @@ int main(){
         cout<<sum<<" ";
     }
     cout<<endl<<sum;
-    //add(arr[]);
 }
-// int add(int arr[]){
-
-// }
