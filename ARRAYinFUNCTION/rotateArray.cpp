@@ -24,10 +24,14 @@ void rotate(vector<int> &v){
     int k;
     cout<<"Enter key value: ";
     cin>>k;
-    reverse(0, v.size()-k-1, v);    //part before key value - 1234
-    reverse(v.size()-k, v.size()-1, v);     //part from key value - 567
+    int n= v.size();
+    if(k>n){
+        k=k%n;
+    }
+    reverse(0, n-k-1, v);    //part before key value - 1234
+    reverse(n-k,n-1, v);     //part from key value - 567
     // 4321 765
-    reverse(0,v.size()-1, v);   //final revering result in rotation
+    reverse(0,n-1, v);   //final revering result in rotation
     // 5671234
 
 }
